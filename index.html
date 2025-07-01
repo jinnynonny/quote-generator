@@ -37,34 +37,34 @@
     <div class="max-w-2xl mx-auto p-8">
         <!-- Credit Line -->
         <div class="glass-effect rounded-lg shadow-xl p-6 mb-6">
-            <h1 class="text-4xl font-bold text-blue-500 text-center mb-2">ข้อคิดประจำวัน</h1>
-            <p class="text-xl text-blue-500 text-center opacity-90">เว็บไซต์นี้พัฒนาโดย JINNY เพื่อแบ่งปันข้อคิดดี ๆ</p>
+            <h1 class="text-4xl font-bold text-white text-center mb-2">ข้อคิดประจำวัน</h1>
+            <p class="text-xl text-white text-center opacity-90">เว็บไซต์นี้พัฒนาโดย JINNY เพื่อแบ่งปันข้อคิดดี ๆ</p>
         </div>
         
         <div class="glass-effect rounded-lg shadow-xl p-8 mb-6">
             <div class="fade show">
-                <blockquote id="quote" class="text-2xl font-light text-green-500 mb-4">
+                <blockquote id="quote" class="text-2xl font-light text-white mb-4">
                     กดปุ่มด้านล่างเพื่อดูข้อคิดประจำวัน
                 </blockquote>
-                <p id="author" class="text-green-500 text-right italic">- ผู้เขียน -</p>
+                <p id="author" class="text-white text-right italic">- ผู้เขียน -</p>
             </div>
             
             <!-- Social Share Buttons -->
             <div class="mt-6 flex justify-center space-x-4">
-                <button onclick="shareOnTwitter()" class="social-button text-white hover:text-blue-400">
+                <button onclick="shareOnTwitter()" class="social-button text-blue-800 hover:text-blue-900">
                     <i class="fab fa-twitter text-2xl"></i>
                 </button>
-                <button onclick="shareOnFacebook()" class="social-button text-white hover:text-blue-600">
+                <button onclick="shareOnFacebook()" class="social-button text-blue-800 hover:text-blue-900">
                     <i class="fab fa-facebook text-2xl"></i>
                 </button>
-                <button onclick="copyToClipboard()" class="social-button text-white hover:text-gray-300">
+                <button onclick="copyToClipboard()" class="social-button text-blue-800 hover:text-blue-900">
                     <i class="far fa-copy text-2xl"></i>
                 </button>
             </div>
         </div>
         <button 
             onclick="generateQuote()"
-            class="w-full bg-white/20 hover:bg-white/30 text-pink-400 font-bold py-3 px-6 rounded-lg transition duration-200 backdrop-blur-sm border border-white/30">
+            class="w-full bg-white/20 hover:bg-white/30 text-white font-bold py-3 px-6 rounded-lg transition duration-200 backdrop-blur-sm border border-white/30">
             ข้อคิดใหม่
         </button>
     </div>
@@ -85,87 +85,94 @@
             { text: "จงเป็นตัวของตัวเอง เพราะคนอื่นถูกจองไว้แล้ว", author: "ออสการ์ ไวลด์" },
             { text: "ความสุขไม่ได้มาจากการมีทุกอย่าง แต่มาจากการพอใจในสิ่งที่คุณมี", author: "พุทธสุภาษิต" },
             { text: "การเดินทางพันลี้เริ่มต้นด้วยก้าวแรก", author: "เล่าจื๊อ" },
-            { text: "ความสำเร็จคือการล้มแล้วลุกขึ้นมาใหม่", author: "โรเบิร์ต คิโยซากิ" }
+            { text: "ความสำเร็จคือการล้มแล้วลุกขึ้นมาใหม่", author: "โรเบิร์ต คิโยซากิ" },
+            { text: "จงใช้ชีวิตให้คุ้มค่า เพราะชีวิตนั้นสั้น", author: "แม่ชีเทเรซา" },
+            { text: "จงเป็นการเปลี่ยนแปลงที่คุณอยากเห็นในโลกนี้", author: "มหาตมะ คานธี" },
+            { text: "ความกล้าหาญไม่ได้แปลว่าไม่มีความกลัว แต่คือการเอาชนะความกลัว", author: "เนลสัน แมนเดลา" },
+            { text: "จงเชื่อมั่นในตัวเองและทุกอย่างจะเป็นไปได้", author: "โยฮันน์ โวล์ฟกัง ฟอน เกอเธ่" },
+            { text: "ความสำเร็จคือการเดินจากความล้มเหลวหนึ่งไปยังอีกความล้มเหลวหนึ่งโดยไม่สูญเสียความกระตือรือร้น", author: "วินสตัน เชอร์ชิลล์" },
+            { text: "จงอย่าหยุดตั้งคำถาม", author: "อัลเบิร์ต ไอน์สไตน์" },
+            { text: "ความสุขคือการเดินทาง ไม่ใช่จุดหมายปลายทาง", author: "เบน สวีทแลนด์" },
+            { text: "จงทำในสิ่งที่คุณรัก แล้วคุณจะไม่ต้องทำงานอีกเลยตลอดชีวิต", author: "ขงจื๊อ" },
+            { text: "ความสำเร็จไม่ได้อยู่ที่การไม่ล้ม แต่คือการลุกขึ้นทุกครั้งที่ล้ม", author: "ขงจื๊อ" },
+            { text: "จงใช้ชีวิตในแต่ละวันให้ดีที่สุด เพราะวันพรุ่งนี้ไม่แน่นอน", author: "ดาไลลามะ" },
+            { text: "จงเป็นแสงสว่างในวันที่มืดมน", author: "มาร์ติน ลูเธอร์ คิง จูเนียร์" },
+            { text: "จงกล้าที่จะฝันและกล้าที่จะลงมือทำ", author: "วอลต์ ดิสนีย์" },
+            { text: "ความสำเร็จไม่ได้มาจากโชค แต่เกิดจากความพยายาม", author: "โธมัส เอดิสัน" },
+            { text: "จงเป็นแรงบันดาลใจให้กับตัวเองและผู้อื่น", author: "จอห์น แมกซ์เวลล์" },
+            { text: "อย่ารอคอยโอกาส แต่จงสร้างมันขึ้นมาเอง", author: "จอร์จ เบอร์นาร์ด ชอว์" },
+            { text: "จงเรียนรู้จากอดีต แต่ใช้ชีวิตกับปัจจุบัน", author: "อัลเบิร์ต ไอน์สไตน์" },
+            { text: "ความสำเร็จไม่ได้วัดที่ปลายทาง แต่วัดที่การเดินทาง", author: "ราล์ฟ วัลโด เอเมอร์สัน" },
+            { text: "จงเป็นคนที่กล้าฝันและกล้าทำ", author: "ไมเคิล จอร์แดน" },
+            { text: "อย่ากลัวที่จะล้มเหลว เพราะความล้มเหลวคือครูที่ดีที่สุด", author: "ไมเคิล จอร์แดน" },
+            { text: "จงใช้ชีวิตอย่างมีเป้าหมาย", author: "โทนี่ ร็อบบินส์" },
+            { text: "ความสำเร็จไม่ได้อยู่ที่ใคร แต่ขึ้นอยู่กับตัวเราเอง", author: "บิล เกตส์" },
+            { text: "จงเป็นคนที่มีความหวังเสมอ", author: "สตีเฟน ฮอว์คิง" },
+            { text: "อย่าหยุดเรียนรู้ เพราะชีวิตคือการเรียนรู้ไม่สิ้นสุด", author: "อัลเบิร์ต ไอน์สไตน์" },
+            { text: "จงเป็นคนที่สร้างแรงบันดาลใจให้กับผู้อื่น", author: "โอปราห์ วินฟรีย์" },
+            { text: "ความสำเร็จไม่ได้มาง่าย ๆ แต่ก็คุ้มค่าที่จะพยายาม", author: "เฮนรี ฟอร์ด" },
+            { text: "จงใช้ชีวิตอย่างมีคุณค่า", author: "แม่ชีเทเรซา" },
+            { text: "อย่ากลัวที่จะเปลี่ยนแปลง เพราะการเปลี่ยนแปลงคือโอกาส", author: "ชาร์ลส์ ดาร์วิน" },
+            { text: "จงเชื่อมั่นในศักยภาพของตัวเอง", author: "นโปเลียน ฮิลล์" },
+            { text: "ความสำเร็จเริ่มต้นที่ความคิดบวก", author: "นโปเลียน ฮิลล์" },
+            { text: "จงเป็นคนที่ไม่ยอมแพ้ต่ออุปสรรค", author: "เฮเลน เคลเลอร์" },
+            { text: "อย่ารอให้พร้อม เพราะบางทีโอกาสไม่ได้รอเรา", author: "นโปเลียน ฮิลล์" },
+            { text: "จงกล้าที่จะฝันและกล้าที่จะลงมือทำ", author: "วอลต์ ดิสนีย์" },
+            { text: "ความสำเร็จไม่ได้ขึ้นอยู่กับโชค แต่ขึ้นอยู่กับความพยายาม", author: "โธมัส เอดิสัน" },
+            { text: "จงเป็นคนที่มีความหวังเสมอ", author: "สตีเฟน ฮอว์คิง" },
+            { text: "อย่ากลัวที่จะผิดพลาด เพราะความผิดพลาดคือบทเรียน", author: "โธมัส เอดิสัน" },
+            { text: "จงใช้ชีวิตอย่างมีความสุขในทุกวัน", author: "ดาไลลามะ" },
+            { text: "ความสำเร็จไม่ได้อยู่ที่ใคร แต่ขึ้นอยู่กับตัวเราเอง", author: "บิล เกตส์" },
+            { text: "จงเป็นคนที่กล้าคิดต่าง", author: "สตีฟ จ็อบส์" },
+            { text: "อย่าหยุดพยายาม แม้จะล้มเหลวกี่ครั้งก็ตาม", author: "โธมัส เอดิสัน" },
+            { text: "จงเชื่อว่าทุกอย่างเป็นไปได้ ถ้าเราตั้งใจ", author: "นโปเลียน ฮิลล์" },
+            { text: "ความสำเร็จไม่ได้วัดที่เงินทอง แต่วัดที่ความสุขใจ", author: "ดาไลลามะ" },
+            { text: "จงเป็นคนที่มีความฝันและกล้าทำตามฝัน", author: "วอลต์ ดิสนีย์" },
+            { text: "อย่ากลัวที่จะเริ่มต้นใหม่ เพราะทุกวันคือโอกาสใหม่", author: "แม่ชีเทเรซา" },
+            { text: "จงใช้ชีวิตอย่างมีคุณค่า", author: "แม่ชีเทเรซา" },
+            { text: "ความสำเร็จไม่ได้อยู่ที่ปลายทาง แต่อยู่ที่การเดินทางของเรา", author: "ราล์ฟ วัลโด เอเมอร์สัน" },
+            { text: "จงเป็นคนที่มีความหวังและไม่ยอมแพ้", author: "เฮเลน เคลเลอร์" },
+            { text: "อย่าหยุดฝัน แม้จะมีอุปสรรคมากมาย", author: "วอลต์ ดิสนีย์" },
+            { text: "จงเชื่อมั่นในความสามารถของตัวเอง", author: "นโปเลียน ฮิลล์" },
+            { text: "ความสำเร็จไม่ได้มาง่าย ๆ แต่ก็ไม่ได้ยากเกินไป", author: "เฮนรี ฟอร์ด" },
+            { text: "จงเป็นคนที่กล้าคิด กล้าทำ กล้าฝัน", author: "สตีฟ จ็อบส์" },
+            { text: "อย่ากลัวที่จะล้มเหลว เพราะความล้มเหลวคือจุดเริ่มต้นของความสำเร็จ", author: "ไมเคิล จอร์แดน" },
+            { text: "จงใช้ชีวิตอย่างมีเป้าหมายและความสุข", author: "โอปราห์ วินฟรีย์" }
         ];
 
-        function setRandomBackground() {
-            // ใช้ Picsum API สำหรับภาพสุ่ม
-            const width = 1920;
-            const height = 1080;
-            const randomId = Math.floor(Math.random() * 1000); // Picsum มีภาพประมาณ 1000 ภาพ
-            const imageUrl = `https://picsum.photos/seed/${randomId}/${width}/${height}`;
-            
-            // แสดง loading state
-            document.body.style.opacity = '0.3';
-            
-            // สร้าง Image object เพื่อโหลดภาพใหม่
-            const img = new Image();
-            
-            img.onload = function() {
-                document.body.style.backgroundImage = `url('${imageUrl}')`;
-                document.body.style.opacity = '1';
-                document.body.style.transition = 'all 0.5s ease-in-out';
-                document.body.style.backgroundSize = 'cover';
-                document.body.style.backgroundPosition = 'center';
-                document.body.style.backgroundRepeat = 'no-repeat';
-            };
-            
-            img.onerror = function() {
-                console.error('Error loading image');
-                document.body.style.opacity = '1';
-                // ใช้ภาพสำรองจาก Picsum แทน
-                document.body.style.backgroundImage = "url('https://picsum.photos/1920/1080')";
-            };
-            
-            // เริ่มโหลดภาพ
-            img.src = imageUrl;
-        }
-
-        // เรียกใช้ฟังก์ชันครั้งแรกเมื่อโหลดหน้าเว็บ
-        window.onload = function() {
-            setRandomBackground();
-        };
-
         function generateQuote() {
-            const quoteContainer = document.querySelector('.fade');
-            quoteContainer.classList.remove('show');
-            
-            // เรียกใช้ฟังก์ชันเปลี่ยนภาพพื้นหลัง
-            setRandomBackground();
-            
-            setTimeout(() => {
-                const randomIndex = Math.floor(Math.random() * quotes.length);
-                const quote = quotes[randomIndex];
-                
-                document.getElementById('quote').textContent = quote.text;
-                document.getElementById('author').textContent = `- ${quote.author}`;
-                
-                quoteContainer.classList.add('show');
-            }, 500);
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const quote = quotes[randomIndex];
+            document.getElementById('quote').textContent = quote.text;
+            document.getElementById('author').textContent = quote.author;
         }
 
         function shareOnTwitter() {
-            const quote = document.getElementById('quote').textContent;
-            const author = document.getElementById('author').textContent;
-            const text = encodeURIComponent(`"${quote}" ${author}`);
-            window.open(`https://twitter.com/intent/tweet?text=${text}`, '_blank');
+            const quoteText = encodeURIComponent(document.getElementById('quote').textContent);
+            const author = encodeURIComponent(document.getElementById('author').textContent);
+            window.open(`https://twitter.com/intent/tweet?text=${quoteText} - ${author}`, '_blank');
         }
 
         function shareOnFacebook() {
-            const quote = document.getElementById('quote').textContent;
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://www.facebook.com/sharer/sharer.php?quote=${encodeURIComponent(quote)}&u=${url}`, '_blank');
+            const quoteText = encodeURIComponent(document.getElementById('quote').textContent);
+            const author = encodeURIComponent(document.getElementById('author').textContent);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&quote=${quoteText} - ${author}`, '_blank');
         }
 
         function copyToClipboard() {
-            const quote = document.getElementById('quote').textContent;
+            const quoteText = document.getElementById('quote').textContent;
             const author = document.getElementById('author').textContent;
-            const text = `"${quote}" ${author}`;
-            
-            navigator.clipboard.writeText(text).then(() => {
-                alert('Quote copied to clipboard!');
-            });
+            const textToCopy = `${quoteText} - ${author}`;
+            const tempInput = document.createElement('input');
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('ข้อคิดประจำวันถูกคัดลอกแล้ว!');
         }
+
+        generateQuote();
     </script>
 </body>
-</html> 
+</html>
