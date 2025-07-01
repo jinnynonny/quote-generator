@@ -140,7 +140,30 @@
             { text: "จงใช้ชีวิตอย่างมีเป้าหมายและความสุข", author: "โอปราห์ วินฟรีย์" }
         ];
 
+        function setRandomBackground() {
+            const width = 1920;
+            const height = 1080;
+            const randomId = Math.floor(Math.random() * 1000);
+            const imageUrl = `https://picsum.photos/seed/${randomId}/${width}/${height}`;
+            document.body.style.opacity = '0.3';
+            const img = new Image();
+            img.onload = function() {
+                document.body.style.backgroundImage = `url('${imageUrl}')`;
+                document.body.style.opacity = '1';
+                document.body.style.transition = 'all 0.5s ease-in-out';
+                document.body.style.backgroundSize = 'cover';
+                document.body.style.backgroundPosition = 'center';
+                document.body.style.backgroundRepeat = 'no-repeat';
+            };
+            img.onerror = function() {
+                document.body.style.opacity = '1';
+                document.body.style.backgroundImage = "url('https://picsum.photos/1920/1080')";
+            };
+            img.src = imageUrl;
+        }
+
         function generateQuote() {
+            setRandomBackground();
             const randomIndex = Math.floor(Math.random() * quotes.length);
             const quote = quotes[randomIndex];
             document.getElementById('quote').textContent = quote.text;
